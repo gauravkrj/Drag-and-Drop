@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tower of Hanoi</title>
+</head>
+
+
+<body>
+
+
+  <div><h1>Tower of Hanoi</h1></div>
+ 
+  <div class="rules">
+    <li>Only one disk can be moved at a time.</li>
+    <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack. In other words, a disk can only be moved if it is the uppermost disk on a stack.</li>
+    <li>No larger disk may be placed on top of a smaller disk.</li>
+
+  </div>>
+
+
+  <div class="body">
+   
+    <div class="peg" id="pegA" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="disk" id="disk3" draggable="true" ondragstart="drag(event)">3</div>
+    <div class="disk" id="disk2" draggable="true" ondragstart="drag(event)">2</div>
+    <div class="disk" id="disk1" draggable="true" ondragstart="drag(event)">1</div>
+    
+    </div>
+
+   <div class="peg" id="pegB" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+   <div class="peg" id="pegC" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+  </div>
+  <!-- Add a Restart button -->
+  <div class="btn"><button onclick="restartGame()">Restart</button></div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
